@@ -103,7 +103,6 @@ python-dateutil==2.9.0.post0
 python-json-logger==4.0.0
 pytz==2025.2
 PyWavelets==1.9.0
-pywinpty==3.0.2
 PyYAML==6.0.3
 pyzmq==27.1.0
 referencing==0.37.0
@@ -146,3 +145,4 @@ webencodings==0.5.1
 websocket-client==1.9.0
 wordcloud==1.9.4
 ydata-profiling==4.17.0
+
