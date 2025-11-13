@@ -1,24 +1,66 @@
-# 💪 Fitness Calories Predictor
+# Fitness Calories Predictor
 
-A Streamlit app that predicts calories burned during fitness activities using user inputs such as age, gender, activity type, duration, heart rate, steps, sleep, and weight. The app also provides visual insights on average calories burned by activity type.
+A Streamlit web application that predicts the number of calories burned during physical activities based on user input. Built using Python and Pandas.
 
 ## Features
 
-- Predict calories burned using a **Linear Regression model**.
-- Interactive sidebar for **user input**.
-- Visualize **average calories by activity type**.
-- User-friendly **guides for activity types and gender mapping**.
+* Upload or select physical activity data.
+* Predict calories burned based on activity metrics.
+* Interactive, user-friendly interface.
+* Works directly in the browser using Streamlit.
 
-## Dataset
+## Demo
 
-- Synthetic dataset with 200 records of fitness activities.
-- Features include: age, gender, activity type, duration, calories burned, heart rate, steps, sleep hours, and weight.
-- The dataset was preprocessed and feature engineered (age groups, effort score) for model training.
+You can run the app locally or deploy it to [Streamlit Cloud](https://streamlit.io/).
 
-## How to Run
+## Installation
 
 1. Clone this repository:
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/yourusername/fitness-calories-predictor.git
+cd fitness-calories-predictor
+```
+
+2. Create a virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # macOS/Linux
+venv\Scripts\activate     # Windows
+```
+
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the Streamlit app:
+
+```bash
+streamlit run app.py
+```
+
+## Dataset
+
+The app uses a cleaned dataset stored in Google Drive. The CSV is loaded directly from a shared link. No local file setup is needed for deployment.
+
+## Dependencies
+
+* Python 3.10+
+* Streamlit
+* Pandas
+* Scikit-learn (if any ML model is used)
+
+## Usage
+
+1. Enter your activity details in the sidebar or input fields.
+2. Click **Predict** to see the estimated calories burned.
+3. Explore the dataset and predictions in the main interface.
+
+## License
+
+This project is open-source and free to use under the MIT License.
+
+
